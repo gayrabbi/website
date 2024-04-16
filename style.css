@@ -18,3 +18,9 @@ body{
 #hannah{
     height: 10vmax;
 }
+
+#links{
+    display: flex;
+    width: 30%;
+    justify-content: space-evenly
+}
