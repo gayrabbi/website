@@ -1,39 +1,38 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>Milkman's Website</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="components/header.js" type="text/javascript" defer ></script>
+        <script src="components/links.js" type="text/javascript" defer ></script>
+    </head>
 
-<head>
-    <title>Milkman's Website</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <body>
+        <header-component></header-component>
 
-<body>
-    <div id="banner2">
-        <img src="milkrabbi.png" id="logo">
-        <img src="banner.png" id="banner">
-        <img src="milkrabbi.png" id="logo">
-    </div>
-    <div id="links">
-        <a href="#aboutme">home (this page)</a>
-        <a href="blog.html">blog</a>
-        <a href="torah.html">torah</a>
-        <a href="https://twitter.com/Rabbi_Melon">twitter</a>
-        <a href="https://github.com/RabbiMelonMilkman">github</a>
-    </div>
-    <p id="aboutme">
-        hey im milkman<br>
-        this persona is a creative outlet for me<br>
-        i mainly tweet for now<br>
-        i also have a <a href="blog.html">blog</a> i dont maintain and i wrote some <a href="torah.html">thoughts on judaism</a><br>
-        <br><br>
-        btw, i have a real name and personality too<br>
-        but that guy is different than this guy <br>
-        please be respectful and allow me to live a double life
-    </p>
-
-
-    <img src="hanna.jpg" id="hannah">
+        <main>
+            <link-component></link-component> 
+            <div id="aboutme">
+                <h1>home</h1>
+                <p>
+                hey im milkman<br>
+                this persona is a creative outlet for me<br>
+                i mainly tweet for now<br>
+                i also have a <a href="blog.html">blog</a> 
+                 <br><br>
+                btw, i have a real name and personality too<br>
+                but that guy is different than this guy <br>
+                please be respectful and allow me to live a double life <br>
+               </p> 
+               <img src="hanna.jpg" id="hannah">
+        </div>
+        </main>
+      
+       
 
 
-</body>
+        
 
+
+    </body>
 </html>
