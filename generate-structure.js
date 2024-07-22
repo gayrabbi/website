@@ -15,7 +15,7 @@ function generateStructure(dir) {
             return {
                 type: 'file',
                 name: path.basename(item.name, '.html'),
-                path: '/' + path.relative('pages', itemPath).replace(/\\/g, '/')
+                path: 'pages/' + path.relative('pages', itemPath).replace(/\\/g, '/')
             };
         }
     }).filter(Boolean);
