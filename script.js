@@ -3,9 +3,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const sidebar = document.getElementById('sidebar');
     const tree = document.getElementById('tree');
     const contentFrame = document.getElementById('contentFrame');
-    
-    contentFrame.src = 'pages/welcome.html';
+
     toggleBtn.addEventListener('click', toggleSidebar);
+    contentFrame.src = 'pages/welcome.html';
 
     function toggleSidebar() {
         sidebar.classList.toggle('collapsed');
@@ -17,7 +17,9 @@ document.addEventListener('DOMContentLoaded', function() {
         contentFrame.src = lastPage;
     }
 
-    fetch('/directory-structure.json')
+    // Add a timestamp to prevent caching
+    const timestamp = new Date().getTime();
+    fetch(`directory-structure.json?t=${timestamp}`)
         .then(response => {
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
@@ -33,6 +35,9 @@ document.addEventListener('DOMContentLoaded', function() {
             tree.innerHTML = `<p>Error loading directory structure: ${error.message}</p>`;
         });
 });
+
+
+
 
 function populateSidebar(data, parentElement) {
     for (const item of data) {
