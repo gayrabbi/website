@@ -7,6 +7,6 @@
   {
     "type": "file",
     "name": "welcome",
-    "path": "/welcome.html"
+    "path": "pages/welcome.html"
   }
 ]
