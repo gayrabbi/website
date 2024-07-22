@@ -1,50 +1,12 @@
 [
-    {
-      "type": "directory",
-      "name": "past projects",
-      "children": [
-        {
-          "type": "directory",
-          "name": "other",
-          "children": []
-        },
-        {
-          "type": "file",
-          "name": "portfolio_notes",
-          "path": "pages/past projects/portfolio_notes.html"
-        },
-        {
-          "type": "directory",
-          "name": "school",
-          "children": []
-        },
-        {
-          "type": "directory",
-          "name": "work",
-          "children": []
-        }
-      ]
-    },
-    {
-      "type": "directory",
-      "name": "reference material and textbooks",
-      "children": [
-        {
-          "type": "directory",
-          "name": "math",
-          "children": [
-            {
-              "type": "file",
-              "name": "euclidean_geometry",
-              "path": "pages/reference material and textbooks/math/euclidean_geometry.html"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "file",
-      "name": "welcome",
-      "path": "pages/welcome.html"
-    }
-  ]
+  {
+    "type": "directory",
+    "name": "images",
+    "children": []
+  },
+  {
+    "type": "file",
+    "name": "welcome",
+    "path": "pages/welcome.html"
+  }
+]
