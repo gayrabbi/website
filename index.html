@@ -1,38 +1,23 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Milkman's Website</title>
-        <link rel="stylesheet" href="style.css" type="text/css">
-        <script src="components/header.js" type="text/javascript" defer ></script>
-        <script src="components/links.js" type="text/javascript" defer ></script>
-    </head>
-
-    <body>
-        <header-component></header-component>
-
-        <main>
-            <link-component></link-component> 
-            <div id="aboutme">
-                <h1>home</h1>
-                <p>
-                hey im milkman<br>
-                this persona is a creative outlet for me<br>
-                i mainly tweet for now<br>
-                i also have a <a href="blog.html">blog</a> 
-                 <br><br>
-                btw, i have a real name and personality too<br>
-                but that guy is different than this guy <br>
-                please be respectful and allow me to live a double life <br>
-               </p> 
-               <img src="hanna.jpg" id="hannah">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="font-family: monospace;">
+    <div id="container">
+        <div id="sidebar" class="sidebar">
+            <button id="toggleBtn" class="toggle-btn">☰</button>
+            <div class="sidebar-content">
+                <div id="tree" class="tree"></div>
+            </div>
         </div>
-        </main>
-      
-       
-
-
-        
-
-
-    </body>
+        <div id="main" class="main">
+            <iframe id="contentFrame" name="contentFrame" class="content-frame"></iframe>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
 </html>
