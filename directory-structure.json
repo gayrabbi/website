@@ -16,6 +16,11 @@
   },
   {
     "type": "file",
+    "name": "goodlinks",
+    "path": "pages/goodlinks.html"
+  },
+  {
+    "type": "file",
     "name": "recipes",
     "path": "pages/recipes.html"
   }
