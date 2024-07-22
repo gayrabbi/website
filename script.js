@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
         contentFrame.src = lastPage;
     }
 
-    fetch('directory-structure.json')
+    fetch('/directory-structure.json')
         .then(response => {
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
