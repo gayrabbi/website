@@ -3,5 +3,21 @@
     "type": "file",
     "name": "welcome",
     "path": "pages/welcome.html"
+  },
+  {
+    "type": "file",
+    "name": "chemistry",
+    "path": "pages/chemistry.html"
+  },
+  {
+    "type": "file",
+    "name": "gardening",
+    "path": "pages/gardening.html"
+  },
+  {
+    "type": "file",
+    "name": "recipes",
+    "path": "pages/recipes.html"
   }
+
 ]
