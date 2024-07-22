@@ -1,10 +1,5 @@
 [
   {
-    "type": "directory",
-    "name": "images",
-    "children": []
-  },
-  {
     "type": "file",
     "name": "welcome",
     "path": "pages/welcome.html"
