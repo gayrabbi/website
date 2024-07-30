@@ -23,6 +23,11 @@
     "type": "file",
     "name": "recipes",
     "path": "pages/recipes.html"
+  },
+  {
+    "type": "file",
+    "name": "weblog",
+    "path": "pages/weblog.html"
   }
 
 ]
