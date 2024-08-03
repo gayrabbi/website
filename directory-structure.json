@@ -1,44 +1,60 @@
 [
   {
-    "type": "file",
-    "name": "welcome",
-    "path": "pages/welcome.html"
+    "type": "category",
+    "name": "General",
+    "children": [
+      {
+        "type": "file",
+        "name": "welcome",
+        "path": "pages/welcome.html"
+      },
+      {
+        "type": "file",
+        "name": "links",
+        "path": "pages/links.html"
+      },
+      {
+        "type": "file",
+        "name": "weblog",
+        "path": "pages/weblog.html"
+      }
+    ]
   },
   {
-    "type": "file",
-    "name": "chemistry",
-    "path": "pages/chemistry.html"
+    "type": "category",
+    "name": "Science",
+    "children": [
+      {
+        "type": "file",
+        "name": "biology",
+        "path": "pages/biology.html"
+      },
+      {
+        "type": "file",
+        "name": "chemistry",
+        "path": "pages/chemistry.html"
+      }
+    ]
   },
   {
-    "type": "file",
-    "name": "gardening",
-    "path": "pages/gardening.html"
-  },
-  {
-    "type": "file",
-    "name": "goodlinks",
-    "path": "pages/goodlinks.html"
-  },
-  {
-    "type": "file",
-    "name": "recipes",
-    "path": "pages/recipes.html"
-  },
-  {
-    "type": "file",
-    "name": "weblog",
-    "path": "pages/weblog.html"
-  },
-  {
-    "type": "file",
-    "name": "books",
-    "path": "pages/books.html"
-  },
-  {
-    "type": "file",
-    "name": "books",
-    "path": "pages/biology.html"
+    "type": "category",
+    "name": "Other",
+    "children": [
+      {
+        "type": "file",
+        "name": "books",
+        "path": "pages/books.html"
+      },
+      {
+        "type": "file",
+        "name": "gardening",
+        "path": "pages/gardening.html"
+      },
+      {
+        "type": "file",
+        "name": "recipes",
+        "path": "pages/recipes.html"
+      }
+    ]
   }
-
-
 ]

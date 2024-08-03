@@ -36,21 +36,19 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 });
 
-
-
-
 function populateSidebar(data, parentElement) {
     for (const item of data) {
         const itemElement = document.createElement('div');
         itemElement.classList.add('tree-item');
 
-        if (item.type === 'directory') {
+        if (item.type === 'category') {
             const toggleElement = document.createElement('span');
             toggleElement.classList.add('toggle');
             toggleElement.textContent = '▶';
             itemElement.appendChild(toggleElement);
 
             const nameElement = document.createElement('span');
+            nameElement.classList.add('category-name');
             nameElement.textContent = item.name;
             itemElement.appendChild(nameElement);
 
@@ -65,7 +63,7 @@ function populateSidebar(data, parentElement) {
                 childrenElement.style.display = childrenElement.style.display === 'none' ? 'block' : 'none';
                 toggleElement.textContent = childrenElement.style.display === 'none' ? '▶' : '▼';
             });
-        } else {
+        } else if (item.type === 'file') {
             const linkElement = document.createElement('a');
             linkElement.textContent = item.name;
             linkElement.href = item.path;
