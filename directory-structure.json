@@ -47,6 +47,11 @@
       },
       {
         "type": "file",
+        "name": "esoteria",
+        "path": "pages/esoteria.html"
+      },
+      {
+        "type": "file",
         "name": "gardening",
         "path": "pages/gardening.html"
       },
