@@ -33,6 +33,12 @@
     "type": "file",
     "name": "books",
     "path": "pages/books.html"
+  },
+  {
+    "type": "file",
+    "name": "books",
+    "path": "pages/biology.html"
   }
+
 
 ]
