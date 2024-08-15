@@ -12,11 +12,6 @@
         "type": "file",
         "name": "links",
         "path": "pages/links.html"
-      },
-      {
-        "type": "file",
-        "name": "weblog",
-        "path": "pages/weblog.html"
       }
     ]
   },
