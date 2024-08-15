@@ -10,6 +10,11 @@
       },
       {
         "type": "file",
+        "name": "write-ups",
+        "path": "pages/writeup.html"
+      },
+      {
+        "type": "file",
         "name": "links",
         "path": "pages/links.html"
       }

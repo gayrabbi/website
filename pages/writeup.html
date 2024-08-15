@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Articles</title>
+    <style>
+        body {
+            background-color: #3b3b3b;;
+            color: #ffffff;
+            font-family:monospace; 
+            font-size: large;
+            line-height: 2;
+        }
+        h1 {
+            text-align: center;
+            color: #ffffff;
+        }
+        .topics {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .topics button {
+            margin: 5px;
+            padding: 10px;
+            background-color: #3b3b3b;
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+        }
+        .topics button:hover, .topics button.active {
+            background-color: #ffffff;
+            color: #3b3b3b;
+        }
+        .articles {
+            width: 60%;
+            margin: 0 auto;
+        }
+        details {
+            margin-bottom: 10px;
+        }
+        .article-item {
+            display: block; /* All articles are shown by default */
+        }
+    </style>
+</head>
+<body>
+    <h1>Write-Ups</h1>
+    
+    <div class="topics">
+        <button onclick="filterArticles('all')" class="active">All</button>
+        <button onclick="filterArticles('algorithm')">Algorithm</button>
+        <button onclick="filterArticles('boredom')">Boredom</button>
+        <button onclick="filterArticles('things')">Things</button>
+        <button onclick="filterArticles('writing')">Writing</button>
+        <!-- Add more buttons as needed -->
+    </div>
+
+    <div class="articles">
+        <details class="article-item writing">
+            <summary>August 14th - Writing</summary>
+            <p>Over the past few years I've lost the ability to engage deeply with my ideas. The only solution to this problem is to write. I would like to eventually write my thoughts on topics such as theology, politics, philosophy, and such. Why? I guess it's tremendously satisfying to be able to verbalize feelings, and the topics listed are those which come up often and are accompanied by emotional baggage.</p>
+            <p>What to write about is a difficult question. I have many ideas, but as stated, I struggle to verbalize them. However, the solution right now is simple. I tweet a lot. So let's look at my tweets and expand on them.</p>
+        </details>
+        
+        <details class="article-item things">
+            <summary>August 14th - Fixing my bike</summary>
+            <p>In the summer of 2019 I bought a vintage 12-speed road bike off craigslist for 100 CAD. Its drop bar handlebar was covered in bright orange grip tape, the body spray painted dark black, and the wheels baby blue. The bike squeaked and creaked, and the bald and short man who sold me them didn't have a full pair of teeth. The bike was probably the best purchase I've ever made. Quick napkin math makes me believe I've covered over 5000 km's with that bike - mainly on my rides to work. The amazing detail I left out is that I never bothered to change a gear as the sounds the bike made the one time I did were not pleasant.</p>
+            <p>In 2021, I decided to purchase a second bike that was more suitable for off-road as my route to school was safer on a bike path that runs through a local forest. It was big and blue. Very Rusty. It cost me the same as my road bike, and I bought it off Facebook marketplace. A month into riding the bike I decided to head to a local Bike Shop to buy front fenders. Upon arrival the shop worker suggested I give the bike for her to check for me. When I got the bike back after a few hours, the rear wheel had two broken spokes and I was informed that all things considered the bike was unsafe for travel and needs over 400 CAD worth of work. I never rode the bike since.</p>
+            <p>This past summer my main goal was to "shed some weight" - organize and get rid of as much as I can. Essentially, I am looking to adopt a quasi-minimalist lifestyle where the burden of owning too many (ugly) things does not weigh me down. One of my projects was to deal with my bikes. My first step was to try and remove rust from my road bike. I used a paper towel vinegar method followed by some sanding. It worked surprisingly well. I followed this with a "deep clean" and a good oiling. After all this work the bike was feeling great, and so I decided after 5 years and thousands of km's to finally switch gears. My chain snapped.</p>
+            <p>I tried fixing the chain myself. That may be a story for another time. For now, here is how this all ended: I paid 200$ for labour, a new chain, fenders, and brakes for my main bicycle. I donated my second pair.</p>
+        </details>
+        
+        <details class="article-item boredom">
+            <summary>August 14th - Boredom</summary>
+            <p>I don't think I have much words left in me for tonight, but here is a little thought that came up as a reply to @picklericktard's tweet about a cure for burn out: I wrote "The cure is boredom, nature, and physical activity. The problem is you keep consuming garbage so you still feel like shit. Delete X and Netflix for a while and go for a walk."</p>
+            <p>A few hours after my comment I saw a tweet by @SwiftOnSecurity: "It is boredom that creates the incentive for investing in the spurious common interest amongst peers. It is the lack of anything else that forces the hand of human connection. You cannot foster adults who have always had an escape. The world operates on engendering resilience."</p>
+            <p>Swift wrote my thoughts a lot better than I did. Proves my point about needing to write more. I bet if I were bored more often I would write more often.</p>
+        </details>
+        
+        <details class="article-item algorithm">
+            <summary>August 14th - Algorithm</summary>
+            <p>There was a time where the internet was something I used and not something that used me. I used to visit a lot of forums at the time. My go-to ones were a football (soccer) forum, and erowid - for reading trip reports about obscure drugs which I would later share with friends. Life was a lot simpler back then. One of the things that is very different nowadays is how I make decisions. At the time, for a period of several years, I would often bump into someone in real life who would get me excited about an idea I would delve into, or present me with some opportunity (This is how I ended up living in the Golan Heights). I never sought out these interactions or situations, they just happened. These days I find I have been far too calculated in how I live my life. In other words - I used to live by the grace of god, yet lately I've been building stupid plans and stressing about money and the future.</p>
+            <p>Identifying this problem warrants a solution. Boredom is obviously part of it, but a more important factor is taking control of my algorithm. Two years ago I used to go to the gym 6 times a week. At the time I used Instagram a lot and recall that the gym/fitness content was recommended to me often. Causation or Correlation? I am unsure. But I should try this out. I have Twitter off of my phone and Instagram back on it. On Instagram I have spent time to like content of the type of life I would like to live - active and in nature. On Twitter I created curated lists of content I would like to read.</p>
+            <p>Using likes, blocks, lists, etc. is a way to control the content you digest. Leaving the internet altogether is as hard as quitting smoking, so I will be trying to use the addictive properties of the internet to my benefit. To be more intentional on what I engage with online.</p>            
+        </details>
+        
+    </div>
+
+    <script>
+        function filterArticles(topic) {
+            let articles = document.querySelectorAll('.article-item');
+            let buttons = document.querySelectorAll('.topics button');
+            
+            // Reset all buttons
+            buttons.forEach(button => {
+                button.classList.remove('active');
+            });
+
+            // Highlight the selected button
+            event.target.classList.add('active');
+
+            // Filter articles
+            if (topic === 'all') {
+                articles.forEach(article => {
+                    article.style.display = 'block';
+                });
+            } else {
+                articles.forEach(article => {
+                    if (article.classList.contains(topic)) {
+                        article.style.display = 'block';
+                    } else {
+                        article.style.display = 'none';
+                    }
+                });
+            }
+        }
+    </script>
+</body>
+</html>
