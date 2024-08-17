@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Articles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Write-Ups</h1>
+    
+    <div class="topics">
+        <button onclick="filterArticles('all')" class="active">All</button>
+    </div>
+    
+
+        <ul class="stuff">
+            <li>
+                <details class="detail-item writing">
+                    <summary>August 14th - Writing</summary>
+                    <p>Over the past few years I've lost the ability to engage deeply with my ideas. The only solution to this problem is to write. I would like to eventually write my thoughts on topics such as theology, politics, philosophy, and such. Why? I guess it's tremendously satisfying to be able to verbalize feelings, and the topics listed are those which come up often and are accompanied by emotional baggage.</p>
+                    <p>What to write about is a difficult question. I have many ideas, but as stated, I struggle to verbalize them. However, the solution right now is simple. I tweet a lot. So let's look at my tweets and expand on them.</p>
+                </details>
+            </li>
+
+        </ul>
+
+
+    <script>
+        function filterArticles(topic) {
+            let articles = document.querySelectorAll('.detail-item');
+            let buttons = document.querySelectorAll('.topics button');
+            
+            // Reset all buttons
+            buttons.forEach(button => {
+                button.classList.remove('active');
+            });
+
+            // Highlight the selected button
+            event.target.classList.add('active');
+
+            // Filter articles
+            if (topic === 'all') {
+                articles.forEach(article => {
+                    article.style.display = 'block';
+                });
+            } else {
+                articles.forEach(article => {
+                    if (article.classList.contains(topic)) {
+                        article.style.display = 'block';
+                    } else {
+                        article.style.display = 'none';
+                    }
+                });
+            }
+        }
+    </script>
+</body>
+</html>
+
