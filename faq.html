@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+    <h1>FAQ</h1>
+    <p>No one actually asked any of these</p>
+
+    <!-- Filtering Buttons -->
+    <div class="topics">
+        <button onclick="filterItems('all', '.detail-item', '.topics button')" class="active">All</button>
+        <!-- Add more buttons here as needed -->
+    </div>
+
+
+    <ul class="stuff">
+
+        <li>
+            <details class="detail-item gay">
+                <summary>Are you really gay?</summary>
+                <p>No</p>
+            </details>
+        </li>
+        <li>
+            <details class="detail-item single">
+                <summary>Are you single?</summary>
+                <p>Yes</p>
+            </details>
+        </li>
+        <li>
+            <details class="detail-item single">
+                <summary>Do palestinians deserve human rights?</summary>
+                <p>idk</p>
+            </details>
+        </li>
+    </ul>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -3,58 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Articles</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>[Page Title]</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
 </head>
 <body>
-    <h1>Write-Ups</h1>
-    
+    <h1>[Main Heading]</h1>
+    <p>[Introductory paragraph or link to source]</p>
+
+    <!-- Filtering Buttons -->
     <div class="topics">
-        <button onclick="filterArticles('all')" class="active">All</button>
+        <button onclick="filterItems('all', '.detail-item', '.topics button')" class="active">All</button>
+        <!-- Add more buttons here as needed -->
     </div>
-    
 
-        <ul class="stuff">
-            <li>
-                <details class="detail-item writing">
-                    <summary>August 14th - Writing</summary>
-                    <p>Over the past few years I've lost the ability to engage deeply with my ideas. The only solution to this problem is to write. I would like to eventually write my thoughts on topics such as theology, politics, philosophy, and such. Why? I guess it's tremendously satisfying to be able to verbalize feelings, and the topics listed are those which come up often and are accompanied by emotional baggage.</p>
-                    <p>What to write about is a difficult question. I have many ideas, but as stated, I struggle to verbalize them. However, the solution right now is simple. I tweet a lot. So let's look at my tweets and expand on them.</p>
-                </details>
-            </li>
+    <!-- Content Details -->
+    <ul class="stuff">
+        <!-- Each item should be structured like this -->
+        <li>
+            <details class="detail-item [category-class]">
+                <summary>[Item Title]</summary>
 
-        </ul>
+                <!-- Ingredients or details -->
+                <ul>
+                    <!-- List items here -->
+                </ul>
 
+                <!-- Instructions or additional information -->
+                <p>[Instruction or info paragraph 1]</p>
+                <p>[Instruction or info paragraph 2]</p>
 
-    <script>
-        function filterArticles(topic) {
-            let articles = document.querySelectorAll('.detail-item');
-            let buttons = document.querySelectorAll('.topics button');
-            
-            // Reset all buttons
-            buttons.forEach(button => {
-                button.classList.remove('active');
-            });
+            </details>
+        </li>
+    </ul>
 
-            // Highlight the selected button
-            event.target.classList.add('active');
-
-            // Filter articles
-            if (topic === 'all') {
-                articles.forEach(article => {
-                    article.style.display = 'block';
-                });
-            } else {
-                articles.forEach(article => {
-                    if (article.classList.contains(topic)) {
-                        article.style.display = 'block';
-                    } else {
-                        article.style.display = 'none';
-                    }
-                });
-            }
-        }
-    </script>
+    <script src="scripts.js"></script>
 </body>
 </html>
-

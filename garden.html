@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soil and Planting Information</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+    <h1>Gardening</h1>
+    <p>Still very rough stuff</p>
+
+    <div class="topics">
+        <button onclick="filterItems('all', '.detail-item', '.topics button')" class="active">All</button>
+        <button onclick="filterItems('soil', '.detail-item', '.topics button')">Soil</button>
+        <button onclick="filterItems('planting', '.detail-item', '.topics button')">Planting</button>
+    </div>
+
+    <ul class="stuff">
+        <li>
+            <details class="detail-item soil">
+                <summary>Soil Health</summary>
+                <em>Based off of <a href="https://www.theseedcollection.com.au/blog/Testing-Your-Garden-Soil-the-Old-Fashioned-Way">this source</a> accessed June 12th, 2024</em>
+                <h3>Squeeze Test</h3>
+                <p>Take damp soil (not too wet) and squeeze then open hand.</p>
+                <ul>
+                    <li>If it falls apart, it's sandy -> probably low on nutrients and does not retain moisture.</li>
+                    <li>If it doesn't fall apart, it's clay.</li>
+                    <li>Otherwise, it's Loamy -> good: <a href="https://youtu.be/lrVULlz-LOk">Video Link</a></li>
+                </ul>
+                <h3>Drainage Test</h3>
+                <p>Dig 30cm³, put aside for acidity test. Fill with water.</p>
+                <ul>
+                    <li>Less than four hours to drain - good.</li>
+                    <li>More -> improve drainage by either:
+                        <ul>
+                            <li>Building a raised bed for your garden.</li>
+                            <li>Planting in raised rows.</li>
+                            <li>Adding more organic material to make it loamy (if your soil composition is off).</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h3>Worm Test</h3>
+                <p>Moist soil above 10 Celsius should have ~10 worms in 30cm³ if healthy. If less, need more compost.</p>
+                <h3>pH Test</h3>
+                <p>Alkaline soil ("sweet soil") has pH > 7</p>
+                <ul>
+                    <li>Contains sodium/calcium/magnesium</li>
+                </ul>
+                <p>Baking soda (Sodium Bicarbonate NaHCO<sub>3</sub>) is a base like all alkali substances.</p>
+                <ul>
+                    <li>Mix baking soda and water with soil -> the more it fizzes, the more acidic your soil is.</li>
+                </ul>
+                <p>Vinegar is acidic</p>
+                <ul>
+                    <li>Mix 2 tablespoons of soil with vinegar -> The more it fizzes, the more alkaline (basic) your soil is.</li>
+                </ul>
+            </details>
+        </li>
+
+        <li>
+            <details class="detail-item planting">
+                <summary>Lower Mainland & Vancouver Island Planting Chart</summary>
+                <p>This planting chart shows average seeding windows for folks in the Lower Mainland and Vancouver Island. It gives an overview of what to start when in trays, greenhouses/cold frames, and direct seeded outside from January to September - happy planting!</p>
+                <p>Adapted from bcecoseedcoop.com:</p>
+
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Plant</th>
+                            <th>Start Indoors (Trays)</th>
+                            <th>Greenhouse/Cold Frames</th>
+                            <th>Direct Seed Outside</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Arugula</td>
+                            <td>Feb - Mar</td>
+                            <td>Apr - Oct</td>
+                            <td>Apr - Oct</td>
+                        </tr>
+                        <tr>
+                            <td>Basil</td>
+                            <td>Mar - Apr</td>
+                            <td>May - Jun</td>
+                            <td>Jun - Jul</td>
+                        </tr>
+                        <tr>
+                            <td>Beans</td>
+                            <td>Apr - May</td>
+                            <td>May - Jun</td>
+                            <td>Jun - Jul</td>
+                        </tr>
+                        <tr>
+                            <td>Beets</td>
+                            <td>Feb - Mar</td>
+                            <td>Apr - Oct</td>
+                            <td>Apr - Oct</td>
+                        </tr>
+                        <tr>
+                            <td>Broccoli</td>
+                            <td>Feb - Mar</td>
+                            <td>Apr - May</td>
+                            <td>May - Jun</td>
+                        </tr>
+                        <tr>
+                            <td>Brussels Sprouts</td>
+                            <td>Feb - Mar</td>
+                            <td>Apr - May</td>
+                            <td>May - Jun</td>
+                        </tr>
+                        <tr>
+                            <td>Cabbage</td>
+                            <td>Feb - Mar</td>
+                            <td>Apr - May</td>
+                            <td>May - Jun</td>
+                        </tr>
+                        <tr>
+                            <td>Carrots</td>
+                            <td>Feb - Mar</td>
+                            <td>Apr - Oct</td>
+                            <td>Apr - Oct</td>
+                        </tr>
+                        <tr>
+                            <td>Cauliflower</td>
+                            <td>Feb - Mar</td>
+                            <td>Apr - May</td>
+                            <td>May - Jun</td>
+                        </tr>
+                        <tr>
+                            <td>Celery</td>
+                            <td>Feb - Mar</td>
+                            <td>Apr - May</td>
+                            <td>May - Jun</td>
+                        </tr>
+                        <tr>
+                            <td>Chard</td>
+                            <td>Feb - Mar</td>
+                            <td>Apr - Oct</td>
+                            <td>Apr - Oct</td>
+                        </tr>
+                        <tr>
+                            <td>Corn</td>
+                            <td>Apr - May</td>
+                            <td>May - Jun</td>
+                            <td>Jun - Jul</td>
+                        </tr>
+                        <tr>
+                            <td>Cucumbers</td>
+                            <td>Mar - Apr</td>
+                            <td>May - Jun</td>
+                            <td>Jun - Jul</td>
+                        </tr>
+                        <tr>
+                            <td>Eggplant</td>
+                            <td>Feb - Mar</td>
+                            <td>Apr - May</td>
+                            <td>May - Jun</td>
+                        </tr>
+                        <tr>
+                            <td>Kale</td>
+                            <td>Feb - Mar</td>
+                            <td>Apr - Oct</td>
+                            <td>Apr - Oct</td>
+                        </tr>
+                        <tr>
+                            <td>Lettuce</td>
+                            <td>Feb - Mar</td>
+                            <td>Apr - Oct</td>
+                            <td>Apr - Oct</td>
+                        </tr>
+                        <tr>
+                            <td>Melons</td>
+                            <td>Mar - Apr</td>
+                            <td>May - Jun</td>
+                            <td>Jun - Jul</td>
+                        </tr>
+                        <tr>
+                            <td>Onions</td>
+                            <td>Feb - Mar</td>
+                            <td>Apr - May</td>
+                            <td>May - Jun</td>
+                        </tr>
+                        <tr>
+                            <td>Peas</td>
+                            <td>Feb - Mar</td>
+                            <td>Apr - Oct</td>
+                            <td>Apr - Oct</td>
+                        </tr>
+                        <tr>
+                            <td>Peppers</td>
+                            <td>Feb - Mar</td>
+                            <td>Apr - May</td>
+                            <td>May - Jun</td>
+                        </tr>
+                        <tr>
+                            <td>Potatoes</td>
+                            <td>Feb - Mar</td>
+                            <td>Apr - May</td>
+                            <td>May - Jun</td>
+                        </tr>
+                        <tr>
+                            <td>Pumpkins</td>
+                            <td>Apr - May</td>
+                            <td>May - Jun</td>
+                            <td>Jun - Jul</td>
+                        </tr>
+                        <tr>
+                            <td>Radishes</td>
+                            <td>Feb - Mar</td>
+                            <td>Apr - Oct</td>
+                            <td>Apr - Oct</td>
+                        </tr>
+                        <tr>
+                            <td>Spinach</td>
+                            <td>Feb - Mar</td>
+                            <td>Apr - Oct</td>
+                            <td>Apr - Oct</td>
+                        </tr>
+                        <tr>
+                            <td>Squash</td>
+                            <td>Apr - May</td>
+                            <td>May - Jun</td>
+                            <td>Jun - Jul</td>
+                        </tr>
+                        <tr>
+                            <td>Tomatoes</td>
+                            <td>Feb - Mar</td>
+                            <td>Apr - May</td>
+                            <td>May - Jun</td>
+                        </tr>
+                        <tr>
+                            <td>Turnips</td>
+                            <td>Feb - Mar</td>
+                            <td>Apr - Oct</td>
+                            <td>Apr - Oct</td>
+                        </tr>
+                        <tr>
+                            <td>Zucchini</td>
+                            <td>Apr - May</td>
+                            <td>May - Jun</td>
+                            <td>Jun - Jul</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>For additional details on specific seeding times and methods, refer to the original chart or contact BCEcoSeedCoop.</p>
+            </details>
+        </li>
+
+        <li>
+            <details class="detail-item planting">
+                <summary>Nicotiana rustica (Wild Tobacco)</summary>
+                <p>Direct sow in spring, pressing into the surface of the soil. Keep the soil lightly moist until germination, which usually occurs within 10-20 days. Or start indoors 6-8 weeks before the last frost of spring. Keep seedlings moist until they become established.</p>
+            </details>
+        </li>
+    </ul>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

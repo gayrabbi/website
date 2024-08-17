@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+    <h1>About</h1>
+    <p>What is going on here?</p>
+
+    <!-- Filtering Buttons -->
+    <div class="topics">
+        <button onclick="filterItems('all', '.detail-item', '.topics button')" class="active">All</button>
+        <!-- Add more buttons here as needed -->
+    </div>
+
+   
+
+    <ul class="stuff">
+        <li>
+            <details class="detail-item technology">
+                <summary>Technology</summary>
+
+                <p>
+                    I host my website with github pages right now. 
+                </p>
+                <p>
+                    I chose to edit this website via github codespaces. I already have another git account setup on my machine, so this is easier for now.
+                </p>
+                <p>
+                    The design of this current iteration of the website is inspired by https://lukesmith.xyz/.
+                </p>
+                <p>     
+                    My next goal is to follow his guide on becoming an internet landlord: https://landchad.net/
+                </p>
+                <p>
+                    I already tried to self host on my esp32, but that requires buying an SD card, so I will try following his tutorials next. It also looks very well thought out.
+                </p>
+                <p>
+                    For my domain, I bought rabbimelon.com from google domains. google domains was a good platform.
+                    The migration to sqaurespace was disappointing, so I was looking into alternatives. I found godaddy had a good offer on gayrabbi.com so I use godaddy. It sucks a lot.
+                </p>
+            </details>
+        </li>
+        <!-- Each item should be structured like this -->
+        <li>
+            <details class="detail-item why">
+                <summary>Why</summary>
+
+                <ol>
+                    <li>
+                        Trying out new things.
+                    </li>
+                    <li>
+                        The internet has become centralized. 
+                    </li>
+                </ol>
+                
+                <p>
+                    1. This website, and the psuedo-anonymity in general, gives me an oppurtinity to try things while recieving real feedback from real humans.
+                    The real world doesn't allow much room for creativity and making mistakes. Maybe it does, but i'm just too anxious.
+                    A platform like this lets me express myself creativly without judgement, and I get to try new technologies by having a website, read my future plans and vision to understand.
+                </p>
+
+                <p>
+                    2. There is so much information out there yet search engines have been exploited by SEO specialists, government censorship, and Apple (the devil).
+                    Although everything is out there, finding stuff is hard. If you want proof, bake pitas from a recipe from google, perplexity or chatgpt. Then make pitas from my recipe.
+                    Was it more pleasent to find the recipe on my website or on the alternatives? What was the cheapest way to find those recipes? Most importantly, which pita is better?
+                </p>
+
+            </details>
+        </li>
+
+
+
+            <li>
+                <details class="detail-item vision">
+                    <summary>Vision</summary>
+
+                    <p>
+                        First and foremost i'd like to leverage this websites existance to learn some new technologies. Ideas:
+                    </p>
+                    <ul>
+                        <li>
+                            Become an internet landlord - https://landchad.net/
+                        </li>
+                        <li>
+                            Track user data (in a fun way)- I'm thinking of one of those old style website visitor count by country.
+                        </li>
+                        <li>
+                            Forum/comments/log in system - Would be cool if you guys can leave comments, maybe let me know about a spelling mistake, or some thing to research.
+                        </li>
+                        <li>
+                            Web graphics - this is fun, and is a good way to get payed if I get good at it.
+                        </li>
+                    <p>
+                        The second component on my vision related to the content. I will do two main things:
+                    </p>
+                    <ul>
+                        <li>
+                            Curate links and information I find useful.
+                        </li>
+                        <li>
+                            Write about stuff I find interesting - eventually i'd like to go heavy on kabbalah and jungian psychology on here.
+                        </li>
+                    </ul>
+                    </ul>
+                </details>
+            </li>
+
+
+
+                <li>
+                    <details class="detail-item status">
+                        <summary>Status</summary>
+                        <p>
+                            Everything right now is very rough work. My to do list:
+                        </p>
+                        <ol>
+                            <li>
+                                Update garden.html about my tabacco plant.
+                            </li>
+                            <li>
+                                Add a webpage about my X pfp's over time.
+                            </li>
+                            <li>
+                                Update and polish up my list of links.
+                            </li>
+                            <li>
+                                Migrate to a new server - A lot of the technical stuff I want to do may require running code on the server. Github Pages only serves static webpages. Once I figure this out I'll plan out how to do everything else.
+                            </li>
+                        </ol>
+        
+                    </details>
+                </li>
+          
+
+    </ul>
+
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>
