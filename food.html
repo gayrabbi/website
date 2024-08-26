@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+    <h1>Food</h1>
+    <p>Some of the recipes are my grandma's. Some of the recipes are by <a href="https://www.youtube.com/channel/UCxmC9v8TxQVxL1qwkeLFDRA">Max Malkiel</a>.</p>
+
+    <!-- Filtering Buttons -->
+    <div class="topics">
+        <button onclick="filterItems('all', '.detail-item', '.topics button')" class="active">All</button>
+        <button onclick="filterItems('bread', '.detail-item', '.topics button')">Bread</button>
+        <button onclick="filterItems('eggs', '.detail-item', '.topics button')">Eggs</button>
+        <button onclick="filterItems('meat', '.detail-item', '.topics button')">Meat</button>
+        <button onclick="filterItems('middle-eastern', '.detail-item', '.topics button')">Middle Eastern</button>
+        <button onclick="filterItems('recipe', '.detail-item', '.topics button')">Recipes</button>
+        <button onclick="filterItems('research', '.detail-item', '.topics button')">Research</button>
+        <button onclick="filterItems('steak', '.detail-item', '.topics button')">Steak</button>
+    </div>
+
+    <!-- Recipe Details -->
+    <ul class="stuff">
+        <li>
+            <details class="detail-item bread recipe">
+                <summary>Challah</summary>
+                <div class="recipe-label">Recipe:</div>
+                <ul>
+                    <li>500 grams flour</li>
+                    <li>4 spoons sugar</li>
+                    <li>1 spoon yeast</li>
+                    <li>1 egg</li>
+                    <li>60 ml oil</li>
+                    <li>200 ml tap water (room temp)</li>
+                    <li>teaspoon salt</li>
+                </ul>
+                <p>Mix and let rest for an hour.</p>
+                <p>Make into strips, then turn into challah.</p>
+                <p>Let rest for another hour.</p>
+                <p>Put coating:</p>
+                <ul>
+                    <li>teaspoon oil</li>
+                    <li>one egg</li>
+                </ul>
+                <p>Bake at 180°C for 30 minutes.</p>
+                <em>Makes 2x Challah</em>
+            </details>
+        </li>
+
+        <li>
+            <details class="detail-item meat recipe">
+                <summary>Meatballs</summary>
+                <div class="recipe-label">Recipe:</div>
+                <ul>
+                    <li>500 grams ground beef</li>
+                    <li>1 egg</li>
+                    <li>1 spoon mushroom soup powder</li>
+                    <li>1 small potato, mashed</li>
+                    <li>1 zucchini, grated</li>
+                    <li>1 spoon bread crumbs</li>
+                    <li>1 spoon parsley, chopped</li>
+                    <li>1 fried onion, chopped</li>
+                </ul>
+                <p>Mix all ingredients and fry until cooked through.</p>
+            </details>
+        </li>
+
+        <li>
+            <details class="detail-item bread recipe">
+                <summary>Pita</summary>
+                <div class="recipe-label">Recipe:</div>
+                <ul>
+                    <li>300 ml water</li>
+                    <li>500 grams flour</li>
+                    <li>5-7 grams yeast</li>
+                    <li>teaspoon salt</li>
+                    <li>1 spoon sugar</li>
+                    <li>half teaspoon baking powder</li>
+                </ul>
+                <p>Mix, knead, and let rest for 2 hours covered.</p>
+                <p>Preheat oven with tray inside.</p>
+                <p>Shape dough into 150-gram balls and let rest for 10 minutes.</p>
+                <p>Flatten and bake directly on the hot tray for about 4 minutes.</p>
+                <em>Makes 5</em>
+            </details>
+        </li>
+
+        <li>
+            <details class="detail-item middle-eastern recipe">
+                <summary>Falafel</summary>
+                <div class="recipe-label">Recipe:</div>
+                <ul>
+                    <li>200 grams dry chickpeas</li>
+                    <li>Half pack coriander and/or parsley</li>
+                    <li>1 small onion</li>
+                    <li>1 teaspoon cumin</li>
+                    <li>1 teaspoon salt</li>
+                    <li>3 cloves garlic</li>
+                    <li>Salt & pepper as needed</li>
+                    <li>Half hot pepper as needed</li>
+                </ul>
+                <p>Soak chickpeas in water overnight (12 hours).</p>
+                <p>Blend finely, adding a bit of water as needed.</p>
+                <p>Fry in boiling oil until golden, or bake at 220°C for 40 minutes.</p>
+                <p>(This one never turns out perfect for me.)</p>
+                <em>Makes 15 balls</em>
+            </details>
+        </li>
+
+        <li>
+            <details class="detail-item middle-eastern recipe">
+                <summary>Hummus</summary>
+                <div class="recipe-label">Recipe:</div>
+                <ul>
+                    <li>200 grams chickpeas (or 450 if already soaked/canned)</li>
+                    <li>1 teaspoon flat soda</li>
+                    <li>80 grams ice</li>
+                    <li>15 grams olive oil</li>
+                    <li>20 grams lemon juice</li>
+                    <li>1 teaspoon salt</li>
+                    <li>1 teaspoon cumin</li>
+                    <li>175 grams tahini</li>
+                </ul>
+                <p>Cook soaked chickpeas in water for 3 hours.</p>
+                <p>Add onion and 3-4 cloves garlic, and boil for another 1.5 hours.</p>
+                <p>Strain and blend quickly with ice.</p>
+                <p>Add remaining ingredients and blend until smooth.</p>
+                <p>Adjust thickness with tahini and water/oil as desired.</p>
+            </details>
+        </li>
+
+        <li>
+            <details class="detail-item eggs research">
+                <summary>Research on Eggs</summary>
+                <p>Based on <a href="https://www.youtube.com/watch?v=0YY7K7Xa5rE">this video</a></p>
+
+                <h3>Domestication to Mass Production</h3>
+                <p>Unlike some fowl that lay a set number of eggs, chickens lay eggs until they have gathered a full nest. As such, you can induce constant egg production by taking the chickens' eggs.</p>
+                <p>In modern times, egg production has been optimized through genetics and industrialization. Most laying chickens today are a result of crossing four parent varieties: Cornish and Plymouth for size, and White Leghorn and Rhode Island Red for egg-laying abilities and improved shell color.</p>
+                <p>Mass production of eggs began in the 20th century, with facilities now housing hundreds of thousands to over a million chickens at once. These chickens are often kept indoors under bright lights and temperature-regulated environments, living for about one to two years while producing 200 to 300 eggs annually.</p>
+
+                <h3>Different Egg Categories</h3>
+                <ol>
+                    <li><strong>Caged Eggs</strong>: These are the lowest-cost eggs and typically come from hens raised in battery cages with very little space. These chickens are fed a diet designed for maximum egg production.</li>
+                    <li><strong>Cage-Free Eggs</strong>: While these hens are not kept in cages, they live in open barns or warehouses with varying degrees of access to outdoor areas.</li>
+                    <li><strong>Free-Range Eggs</strong>: These hens must have access to the outdoors for at least six hours a day. However, the space allocated can vary significantly.</li>
+                    <li><strong>Pasture-Raised Eggs</strong>: These represent the highest standard of living for hens, with 1,000 birds per 2.5 acres. These hens live outdoors year-round with access to mobile or fixed housing.</li>
+                </ol>
+
+                <h3>Nutritional Differences Between Egg Types</h3>
+                <p>Several studies have explored whether there are significant nutritional differences between various types of eggs, mainly due to the diet of the laying hens. For example, some farms produce "nutraceutical" eggs by enriching the hens' diet with fatty acids, resulting in eggs with higher Omega-3 content.</p>
+                <p>One study looked at the macronutrient and micronutrient composition of conventional, organic, and nutraceutical eggs. The findings were as follows:</p>
+                <ul>
+                    <li><strong>Macronutrients</strong>: Organic egg yolks contain the highest protein and fat, while their egg whites also have the highest protein content.</li>
+                    <li><strong>Micronutrients</strong>: Conventional egg yolks are highest in iron, organic egg yolks are highest in potassium, and nutraceutical egg yolks are highest in calcium.</li>
+                </ul>
+                <p>While these differences exist, they are relatively small when considering the entire diet. For example, organic eggs may contain about 0.5 to 1 gram more protein per egg.</p>
+                <p>For those who eat a few eggs a week, these differences may be negligible. However, for individuals who rely heavily on eggs as a primary source of protein and fat, choosing organic or pasture-raised eggs could have a more significant impact on their health goals.</p>
+            </details>
+        </li>
+
+        <li>
+            <details class="detail-item meat steak research">
+                <summary>Research on Cooking Steak</summary>
+                <p>Based on <a href="https://www.youtube.com/watch?v=M5A5_8FUF2I">this video</a> and <a href="https://www.youtube.com/watch?v=uJcO1W_TD74">this video</a></p>
+
+                <h2>How to Make Steak</h2>
+                <h3>Traditional Searing Method</h3>
+                <p><strong>Procedure:</strong></p>
+                <ul>
+                    <li><strong>Step 1:</strong> Heat a skillet on the stove with a good amount of oil until it starts smoking.</li>
+                    <li><strong>Step 2:</strong> Place the steak in the hot skillet and sear one side. Flip it only once to sear the other side.</li>
+                    <li><strong>Step 3:</strong> Transfer the steak to the oven to finish cooking until it reaches the desired internal temperature (typically 125°F for medium-rare).</li>
+                </ul>
+
+                <h4>Pros</h4>
+                <ul>
+                    <li><strong>Speed:</strong> The method is fast and efficient.</li>
+                    <li><strong>Great Crust:</strong> It produces a flavorful and visually appealing crust due to the Maillard reaction.</li>
+                </ul>
+
+                <h4>Cons</h4>
+                <ul>
+                    <li><strong>Messy:</strong> The method generates a lot of smoke and can leave the kitchen messy.</li>
+                    <li><strong>Gray Band:</strong> The traditional method often results in a gray band of overcooked meat around the steak’s edge, detracting from the ideal edge-to-edge cook.</li>
+                </ul>
+
+                <h3>Sous Vide Method</h3>
+                <p><strong>Overview:</strong> Sous vide, meaning "under vacuum," involves vacuum-sealing the steak and cooking it in a precisely controlled water bath over several hours.</p>
+
+                <h4>Procedure:</h4>
+                <ul>
+                    <li><strong>Step 1:</strong> Vacuum-seal the steak and submerge it in a water bath heated to the target temperature (e.g., 125°F for medium-rare).</li>
+                    <li><strong>Step 2:</strong> Cook the steak in the water bath for several hours.</li>
+                    <li><strong>Step 3:</strong> Remove the steak from the bag and quickly sear it in a hot skillet to develop a crust.</li>
+                </ul>
+
+                <h4>Pros</h4>
+                <ul>
+                    <li><strong>Precision:</strong> Sous vide allows for exact control over the steak’s doneness, resulting in an evenly cooked steak from edge to edge.</li>
+                    <li><strong>Minimal Mess:</strong> The final searing step is quick and generates minimal mess.</li>
+                </ul>
+
+                <h4>Cons</h4>
+                <ul>
+                    <li><strong>Time-Consuming:</strong> This method requires a significant time investment.</li>
+                    <li><strong>Special Equipment:</strong> Sous vide requires an immersion circulator and vacuum sealer, which can be expensive and cumbersome to use.</li>
+                </ul>
+
+                <h3>Reverse-Sear Method</h3>
+                <p><strong>Overview:</strong> The reverse-sear method is a hybrid of sous vide and traditional searing, designed to offer even cooking with a great crust.</p>
+
+                <h4>Procedure:</h4>
+                <ul>
+                    <li><strong>Step 1:</strong> Preheat the oven to a low temperature (around 250°F).</li>
+                    <li><strong>Step 2:</strong> Place the steak on a wire rack over a baking sheet and cook it in the oven until it reaches an internal temperature of about 115°F for medium-rare.</li>
+                    <li><strong>Step 3:</strong> Remove the steak from the oven and sear it in a hot skillet to develop a crust.</li>
+                </ul>
+
+                <h4>Pros</h4>
+                <ul>
+                    <li><strong>Even Cooking:</strong> The method ensures even cooking throughout the steak with minimal gray band.</li>
+                    <li><strong>Great Crust:</strong> The final sear produces a fantastic crust.</li>
+                </ul>
+
+                <h4>Cons</h4>
+                <ul>
+                    <li><strong>Time-Consuming:</strong> The method takes longer than traditional searing alone.</li>
+                </ul>
+
+                <h3>Cooking Steak from Frozen</h3>
+                <p><strong>Overview:</strong> Cooking a frozen steak might seem unconventional, but it can yield results that are just as good, if not better, than traditional methods.</p>
+
+                <h4>Procedure:</h4>
+                <ul>
+                    <li><strong>Step 1:</strong> Preheat the oven to its lowest temperature (around 170°F if possible).</li>
+                    <li><strong>Step 2:</strong> Place the frozen steak on a rack set over a baking sheet and cook it in the oven until it reaches an internal temperature of about 115°F for medium-rare.</li>
+                    <li><strong>Step 3:</strong> Season the steak and sear it in a hot skillet with oil, butter, rosemary, and garlic for added flavor.</li>
+                </ul>
+
+                <h4>Final Rest and Serve</h4>
+                <p>Let the steaks rest for a few minutes before slicing to allow the juices to redistribute throughout the meat, resulting in a tender and juicy steak.</p>
+            </details>
+        </li>
+    </ul>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
